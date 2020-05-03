@@ -2,7 +2,8 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "26.0.3"
+    buildToolsVersion "28.0.3"
+
     defaultConfig {
         applicationId "com.udacity.sandwichclub"
         minSdkVersion 16
@@ -15,6 +16,9 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+    viewBinding {
+        enabled = true
     }
 }
 
